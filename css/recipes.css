@@ -1,0 +1,123 @@
+.recipes {
+  margin: 72px 0 72px 0;
+}
+
+.recipes__title-name {
+  position: relative;
+  padding-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipes__title {
+  padding: 40px 0;
+  color: #474747;
+  font-size: 32px;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.recipes__title-name::after {
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 4px;
+  left: 0;
+  top: 0;
+  background: deeppink;
+}
+
+.recipes .recipe {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.recipes .recipe > img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.recipes .recipe__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 16px;
+  background-color: deeppink;
+}
+
+.recipes .recipe__name {
+  color: white;
+}
+
+.recipes .recipe__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  list-style-type: none;
+}
+
+.recipes .recipe__rating > li {
+  color: white;
+}
+
+.recipes .recipe__rating > li.active {
+  color: yellow;
+}
+
+.recipes .recipe__rating > li > i {
+  font-size: 10px;
+}
+
+.recipes__page-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipes__page-number > li {
+  padding: 80px 8px;
+}
+
+.recipes__page-number > li > a {
+  padding: 4px;
+  background-color: pink;
+  font-size: large;
+  line-height: normal;
+  font-weight: normal;
+  text-align: center;
+  -webkit-transition: all 0.35s ease-in-out 0s;
+  transition: all 0.35s ease-in-out 0s;
+}
+
+.recipes__page-number > li > a--active {
+  color: gray;
+}
+
+.recipes__page-number > li > a:hover {
+  color: deeppink;
+  cursor: pointer;
+}
+/*# sourceMappingURL=recipes.css.map */

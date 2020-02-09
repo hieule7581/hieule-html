@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <script src="https://kit.fontawesome.com/fa626ebc7a.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="bootstrap/bootstrap_grid.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/shared-header.css">
+  <link rel="stylesheet" href="css/shared-footer.css">
+
+  <link rel="stylesheet" href="css/recipe-detail.css">
+
+  <title>Recipe Detail</title>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- Section Top-bar -->
+    <section class="top-bar">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-6">
+            <div class="top-bar__icons-wrapper">
+              <ul class="top-bar__icons-list">
+                <li><a href="/"><i class="fab fa-pinterest"></i></a></li>
+                <li><a href="/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="/"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="/"><i class="fab fa-dribbble"></i></a></li>
+                <li><a href="/"><i class="fab fa-behance"></i></a></li>
+                <li><a href="/"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="top-bar__links-wrapper">
+              <a href="/">Register</a>
+              <span>/</span>
+              <a href="/">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Top-nav -->
+    <section class="top-nav">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-4">
+            <div class="top-nav__logo-wrapper">
+              <a href="index.html"><img src="/images/logo.svg" alt=""></a>
+            </div>
+          </div>
+
+          <div class="col-8">
+            <div class="top-nav__group">
+
+              <div class="top-nav__menu-wrapper">
+                <ul class="top-nav__menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="recipes.html">Recipes</a></li>
+                  <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                  <li class="active"><a href="about.html">About</a></li class>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="top-nav__search-wrapper">
+                <div class="top-nav__search">
+                  <a href="/"><i class="fas fa-search"></i></a>
+                </div>
+              </div>
+
+              <div class="top-nav__switch">
+                <i class="fa fa-bars"></i>
+                <ul class="top-nav__sub-menu">
+                  <li class="top-nav__sub-menu-item"><a href="index.html">Home</a></li>
+                  <li class="top-nav__sub-menu-item"><a href="recipes.html">Recipes</a></li>
+                  <li class="top-nav__sub-menu-item"><a href="recipe-detail.html">Recipe Detail</a></li>
+                  <li class="top-nav__sub-menu-item active"><a href="about.html">About</a></li class>
+                  <li class="top-nav__sub-menu-item"><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+    <!-- Section Recipe-detail Hero Image -->
+    <section class="recipe-detail-hero-image">
+      <div class="hero-image"></div>
+    </section>
+
+    <!-- Section Recipe details -->
+    <section class="recipe-details">
+      <div class="container">
+
+        <div class="recipe-details__title">
+          <div class="recipe-details__title-caption">
+            <span>For Begginers</span>
+          </div>
+
+          <p class="recipe-details__title-name">Lamb Chops with green peper sauce</p>
+
+          <div class="recipe-details__title-date">May 15, 2018</div>
+
+          <ul class="recipe-details__rating">
+            <li class="active"><i class="fas fa-star"></i></li>
+            <li class="active"><i class="fas fa-star"></i></li>
+            <li class="active"><i class="fas fa-star"></i></li>
+            <li class="active"><i class="fas fa-star"></i></li>
+            <li><i class="fas fa-star"></i></li>
+          </ul>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="recipe-details__filter-wrapper">
+
+              <div class="recipe-details__filter-top">
+                <div class="recipe-details__filter-top-text">
+                  <p>Prep: 15 mins</p>
+                  <p>Cook: 30 mins</p>
+                  <p>Yields: 8 Servings</p>
+                </div>
+              </div>
+
+              <!-- recipe filter form -->
+              <div class="recipe-details__filter-form-wrapper">
+                <p class="recipe-details__filter-title">Ingredients</p>
+
+                <form class="recipe-details__filter-form">
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="one" checked>
+                    <label for="one">
+                      4 Tbsp (57 gr) butter
+                    </label>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="two" checked>
+                    <label for="two">
+                      2 large eggs
+                    </label>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="three" checked>
+                    <label for="three">
+                      2 yogurt containers granulated sugar
+                    </label>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="four" checked>
+                    <label for="four">
+                      1 vanilla or plain yogurt, 170g container
+                    </label>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="five" checked>
+                    <label for="five">
+                      White flour
+                    </label>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="six" checked>
+                    <label for="six">
+                      1.5 yogurt containers milk
+                    </label>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="seven" checked>
+                    <label for="seven">
+                      1/4 tsp cinnamon
+                    </label>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" id="eight" checked>
+                    <label for="eight">
+                      1 cup fresh blueberries
+                    </label>
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <ul class="recipe-details__info-list">
+
+              <li class="recipe-details__info-list-wrapper">
+                <p class="recipe-details__info-number">01.</p>
+                <p class="recipe-details__info-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse
+                  potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim.
+                  Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magni.
+                </p>
+              </li>
+
+              <li class="recipe-details__info-list-wrapper">
+                <p class="recipe-details__info-number">02.</p>
+                <p class="recipe-details__info-text">
+                  Sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac
+                  pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere
+                  vestibulum ipsum, eget lobortis purus.
+                </p>
+              </li>
+
+              <li class="recipe-details__info-list-wrapper">
+                <p class="recipe-details__info-number">03.</p>
+                <p class="recipe-details__info-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse
+                  potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim.
+                  Phasellus posuere vestibulum ipsum
+                </p>
+              </li>
+
+              <li class="recipe-details__info-list-wrapper">
+                <p class="recipe-details__info-number">04.</p>
+                <p class="recipe-details__info-text">
+                  Sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac
+                  pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere
+                  vestibulum ipsum, eget lobortis.
+                </p>
+              </li>
+
+              <li class="recipe-details__info-list-wrapper">
+                <p class="recipe-details__info-number">05.</p>
+                <p class="recipe-details__info-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse
+                  potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim.
+                  Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magni.
+                </p>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- Section Footer -->
+    <section class="app-footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="app-footer__wrapper-left">
+              <div class="app-footer__wrapper-logo">
+                <img class="app-footer__logo" src="/images/logo.svg" alt="">
+              </div>
+              <div class="app-footer__wrapper-icons">
+                <ul class="app-footer__icon-list">
+                  <li><a href="/"><i class="fab fa-pinterest"></i></a></li>
+                  <li><a href="/"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="/"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="/"><i class="fab fa-dribbble"></i></a></li>
+                  <li><a href="/"><i class="fab fa-behance"></i></a></li>
+                  <li><a href="/"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="app-footer__wrapper-right">
+              <div class="app-footer__menu-wrapper">
+                <ul class="app-footer__menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="recipes.html">Recipes</a></li>
+                  <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <p class="app-footer__copyright">
+                  Copyright © 2019 All rights reserved | This template is made with by <a
+                    href="https://colorlib.com/">Colorlib</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </footer>
+
+</body>
+
+</html>

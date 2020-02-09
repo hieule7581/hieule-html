@@ -1,0 +1,162 @@
+.hero-image {
+  height: 32rem;
+  background-image: url(../images/recipes/single-big.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.recipe-details {
+  padding: 4rem 0 5rem 0;
+}
+
+.recipe-details__title-caption {
+  position: relative;
+  display: inline-block;
+  padding: 14px 20px 12px 30px;
+  margin-bottom: 10px;
+  background-color: deeppink;
+  color: white;
+  font-size: 16px;
+}
+
+.recipe-details__title-name {
+  font-size: 32px;
+  line-height: normal;
+  font-weight: bolder;
+}
+
+.recipe-details__title-date {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  line-height: normal;
+  color: grey;
+}
+
+.recipe-details__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+
+.recipe-details__rating > li {
+  color: lightgray;
+}
+
+.recipe-details__rating > li.active {
+  color: goldenrod;
+}
+
+.recipe-details__rating > li > i {
+  font-size: 10px;
+  line-height: normal;
+}
+
+.recipe-details__filter-wrapper {
+  background-color: whitesmoke;
+}
+
+.recipe-details__filter-top {
+  overflow: hidden;
+}
+
+.recipe-details__filter-top-text {
+  position: relative;
+  padding: 1rem 3rem;
+  background-color: deeppink;
+  color: white;
+}
+
+.recipe-details__filter-form-wrapper {
+  padding: 3rem;
+}
+
+.recipe-details__filter-title {
+  margin-bottom: 1rem;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: bolder;
+}
+
+.recipe-details .form-group {
+  margin-bottom: 1rem;
+}
+
+.recipe-details .form-check label {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding: 1px 0 0 2rem;
+  cursor: pointer;
+}
+
+.recipe-details .form-check label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid gray;
+}
+
+.recipe-details .form-check label::after {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.recipe-details .form-check input[type="checkbox"] {
+  width: 0;
+  opacity: 0;
+}
+
+.recipe-details .form-check input[type="checkbox"]:checked + label::before {
+  background-color: deeppink;
+}
+
+.recipe-details .form-check input[type="checkbox"]:checked + label::after {
+  content: "";
+  border-color: white;
+}
+
+.recipe-details__info-list-wrapper {
+  padding-bottom: 1rem;
+}
+
+.recipe-details__info-number {
+  float: left;
+  font-size: 32px;
+  line-height: normal;
+  font-weight: bolder;
+}
+
+.recipe-details__info-text {
+  padding-left: 5rem;
+  color: gray;
+  font-size: 14px;
+  line-height: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .recipe-details__filter-wrapper {
+    margin-bottom: 2rem;
+  }
+  .recipe-details__info-list {
+    margin-bottom: 2rem;
+  }
+}
+/*# sourceMappingURL=recipe-detail.css.map */

@@ -1,0 +1,51 @@
+[class*="col-"] {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+// EXTRA SMALL
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: calc(100% / 12 * #{$i});
+  }
+}
+
+// SMALL
+@media only screen and (min-width: 576px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+// MEDIUM: TABLET
+@media only screen and (min-width: 768px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+// LARGE: LAPTOP
+@media only screen and (min-width: 992px) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+// EXTRA LARGE: DESKTOP
+@media only screen and (min-width: 1200px) {
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}

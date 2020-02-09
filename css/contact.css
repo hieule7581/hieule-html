@@ -1,0 +1,122 @@
+.contact {
+  padding: 4rem 0 4rem 0;
+}
+
+.contact__form-title {
+  margin-bottom: 2rem;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.contact__form-group {
+  margin-bottom: 2rem;
+}
+
+.contact__form-group input[type="text"] {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  padding: 0 2.5rem;
+  border: 1px solid #eee;
+  background-color: #eee;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+  outline: none;
+  -webkit-transition: border-color 0.25s ease-in-out 0s;
+  transition: border-color 0.25s ease-in-out 0s;
+}
+
+.contact__form-group input[type="text"]:focus {
+  border: 1px solid goldenrod;
+}
+
+.contact__form-group textarea {
+  width: 100%;
+  height: 22rem;
+  padding: 0 2rem;
+  border: 1px solid #eee;
+  margin: 2rem 0 2rem 0;
+  background-color: #eee;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+  outline: none;
+  -webkit-transition: border-color 0.25s ease-in-out 0s;
+  transition: border-color 0.25s ease-in-out 0s;
+}
+
+.contact__form-group textarea:focus {
+  border: 1px solid goldenrod;
+}
+
+.contact .send-button {
+  position: relative;
+  display: inline-block;
+  min-width: 6rem;
+  border: none;
+  padding: 1rem 0.2rem;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  background: deeppink;
+}
+
+.contact__logo {
+  margin-bottom: 2rem;
+}
+
+.contact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.contact__list > li {
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.contact__info-title {
+  display: inline-block;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.1rem solid deeppink;
+  margin-bottom: 0.3rem;
+  color: deeppink;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact__info-data {
+  font-size: 14px;
+}
+
+.contact__icons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__icons-list > li {
+  padding: 0 2rem 0 0;
+  color: whitesmoke;
+}
+/*# sourceMappingURL=contact.css.map */

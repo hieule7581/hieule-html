@@ -1,0 +1,118 @@
+// BODY
+
+// MAIN
+
+// SECTION RECIPES
+
+.recipes {
+  margin: 72px 0 72px 0;
+
+  &__title-name {
+    position: relative;
+    padding-top: 0.5rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__title {
+    padding: 40px 0;
+
+    color: #474747;
+
+    font-size: 32px;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  &__title-name::after {
+    position: absolute;
+    content: "";
+
+    width: 56px;
+    height: 4px;
+    left: 0;
+    top: 0;
+
+    background: deeppink;
+  }
+
+  .recipe {
+    position: relative;
+    margin-bottom: 2rem;
+
+    & > img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    &__details {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      padding: 12px 16px;
+
+      background-color: deeppink;
+    }
+
+    &__name {
+      color: white;
+    }
+
+    &__rating {
+      display: flex;
+      flex-flow: row nowrap;
+
+      list-style-type: none;
+    }
+
+    &__rating > li {
+      color: white;
+    }
+
+    &__rating > li.active {
+      color: yellow;
+    }
+
+    &__rating > li > i {
+      font-size: 10px;
+    }
+  }
+
+  &__page-number {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__page-number > li {
+    padding: 80px 8px;
+  }
+
+  &__page-number > li > a {
+    padding: 4px;
+
+    background-color: pink;
+
+    font-size: large;
+    line-height: normal;
+    font-weight: normal;
+    text-align: center;
+
+    transition: all 0.35s ease-in-out 0s;
+
+    &--active {
+      color: gray;
+    }
+
+    &:hover {
+      color: deeppink;
+      cursor: pointer;
+    }
+  }
+}
